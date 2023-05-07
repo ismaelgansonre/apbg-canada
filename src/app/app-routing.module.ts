@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { BoxComponent } from './pages/box/box.component';
 import { EventComponent } from './pages/event/event.component';
-import { MembresComponent } from './pages/membres/membres.component';
 import { PublicationComponent } from './pages/publication/publication.component';
 import {CommencerComponent} from "./forms/commencer/commencer.component";
 import {RegisterComponent} from "./register/register.component";
