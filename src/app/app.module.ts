@@ -8,7 +8,6 @@ import { BoxComponent } from './pages/box/box.component';
 import { EventComponent } from './pages/event/event.component';
 import { MembresComponent } from './pages/membres/membres.component';
 import { PublicationComponent } from './pages/publication/publication.component';
-import { CommencerComponent } from './forms/commencer/commencer.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -22,7 +21,6 @@ import { RegisterComponent } from './register/register.component';
     EventComponent,
     PublicationComponent,
     MembresComponent,
-    CommencerComponent,
     LoginComponent,
     RegisterComponent,
 
