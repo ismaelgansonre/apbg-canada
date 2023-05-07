@@ -4,7 +4,6 @@ import { AccueilComponent } from './pages/accueil/accueil.component';
 import { BoxComponent } from './pages/box/box.component';
 import { EventComponent } from './pages/event/event.component';
 import { PublicationComponent } from './pages/publication/publication.component';
-import {CommencerComponent} from "./forms/commencer/commencer.component";
 import {RegisterComponent} from "./register/register.component";
 import {LoginComponent} from "./login/login.component";
 
@@ -18,7 +17,7 @@ const routes: Routes = [
   { path: 'event', component: EventComponent },
   { path: 'publication', component: PublicationComponent },
   { path: 'login', component: LoginComponent },
-  {path:'commencer', component: CommencerComponent},
+
   {path:'register', component: RegisterComponent},
 ];
 
