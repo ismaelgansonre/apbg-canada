@@ -5,16 +5,22 @@ import { BoxComponent } from './pages/box/box.component';
 import { EventComponent } from './pages/event/event.component';
 import { MembresComponent } from './pages/membres/membres.component';
 import { PublicationComponent } from './pages/publication/publication.component';
+import {CommencerComponent} from "./forms/commencer/commencer.component";
+import {RegisterComponent} from "./register/register.component";
+import {LoginComponent} from "./login/login.component";
+
 
 const routes: Routes = [
-  //write path for 
+  //write path for
 
 
   { path: '', component: AccueilComponent },
   { path: 'box', component: BoxComponent },
   { path: 'event', component: EventComponent },
   { path: 'publication', component: PublicationComponent },
-  { path: 'membres', component: MembresComponent },
+  { path: 'login', component: LoginComponent },
+  {path:'commencer', component: CommencerComponent},
+  {path:'register', component: RegisterComponent},
 ];
 
 @NgModule({
