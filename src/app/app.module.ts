@@ -11,6 +11,7 @@ import { PublicationComponent } from './pages/publication/publication.component'
 import {ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { RegisterComponent } from './register/register.component';
     MembresComponent,
     LoginComponent,
     RegisterComponent,
+    NavbarComponent,
 
   ],
     imports: [

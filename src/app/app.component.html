@@ -1,83 +1,19 @@
 
-<header aria-label="Site Header" class="bg-white">
-  <div
-    class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
-  >
-    <a class="block text-blue-600" href="/">
-      <span class="sr-only">Home</span>
-     <img src="assets/logo.png">
-    </a>
 
-    <div class="flex flex-1 items-center justify-end md:justify-between">
-      <nav aria-label="Site Nav" class="hidden md:block">
-        <ul class="flex items-center gap-6 text-sm">
-          <li>
-            <a class="text-black-500 transition hover:text-black-500/75" routerLink="/Accueil" routerLinkActive="active">Accueil</a>
-          </li>
+<app-navbar>  
+  
+    <a
+      class="bg-blue-600 px-3 py-2  text-sm font-medium text-white"
+      href="/" routerLink="/login" routerLinkActive="active"
+    >Se connecter</a>
 
-          <li>
-            <a class="text-black-500 transition hover:text-black-500/75" routerLink="/box" routerLinkActive="active">Boite à outils</a>
-          </li>
+    <a
+      class="bg-blue-600 px-3 py-2  text-sm font-medium text-white "
+      href="" routerLink="/register" routerLinkActive="active"
+    >S'enregister</a>
+  
 
-          <li>
-            <a class="text-black-500 transition hover:text-black-500/75" routerLink="/event" routerLinkActive="active">Evenement</a>
-          </li>
-
-          <li>
-            <a class="text-black-500 transition hover:text-black-500/75" routerLink="/publication" routerLinkActive="active">Publication</a>
-          </li>
-
-          <li>
-            <a class="text-black-500 transition hover:text-black-500/75" routerLink="/membres" routerLinkActive="active">Membres</a>
-          </li>
-
-
-        </ul>
-      </nav>
-
-      <div class="flex items-center gap-4">
-        <div class="sm:flex sm:gap-4">
-          <a
-            class="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white transition hover:blue"
-            href="/" routerLink="/login" routerLinkActive="active"
-          >
-            Se connecter
-          </a>
-
-          <a
-            class="hidden rounded-md bg-black-100 px-5 py-2.5 text-sm font-medium blue transition hover:blue/75 sm:block"
-            href="" routerLink="/register" routerLinkActive="active"
-          >
-            S'enregister
-          </a>
-        </div>
-
-        <button
-          class="block rounded bg-black-100 p-2.5 text-black-600 transition hover:text-black-600/75 md:hidden"
-        >
-          <span class="sr-only">Toggle menu</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-
+</app-navbar>
 
 <router-outlet></router-outlet>
 <footer aria-label="Site Footer" class="bg-gray-100">
