@@ -1,0 +1,61 @@
+<div class="flex h-screen">
+  <div class="m-auto">
+
+    <div class="text-center space-y-6">
+      <h3 class="text-xl font-bold">Inscription</h3>
+
+      <div>
+        <input
+          type="email"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          placeholder="Adresse e-mail"
+          #userEmail
+          required
+        />
+      </div>
+
+      <div>
+        <input
+          type="password"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          placeholder="Mot de passe"
+          #userPwd
+          required
+        />
+      </div>
+
+      <div>
+        <input
+          type="button"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          value="S'inscrire"
+          (click)="authService.SignUp(userEmail.value, userPwd.value)"
+        />
+      </div>
+
+      <div>
+        <span class="text-gray-500">Ou</span>
+      </div>
+
+      <!-- Continuer avec Google -->
+      <div>
+        <button
+          type="button"
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline flex justify-center items-center"
+          (click)="authService.GoogleAuth()"
+        >
+          <i class="fab fa-google-plus-g"></i>
+          <span class="ml-2">Continuer avec Google</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <span
+        >Vous avez déjà un compte?
+        <span class="text-blue-500 cursor-pointer" routerLink="/sign-in" routerLinkActive="active">Connexion</span></span
+      >
+    </div>
+
+  </div>
+</div>
