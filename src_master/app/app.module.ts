@@ -10,15 +10,14 @@ import { EventComponent } from './pages/event/event.component';
 import { MembresComponent } from './pages/membres/membres.component';
 import { PublicationComponent } from './pages/publication/publication.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
 
 import { NavbarComponent } from './navbar/navbar.component';
-
-import { AuthService } from './shared/services/auth.service';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AuthService } from './shared/services/auth.service';
 
 
 const config = {

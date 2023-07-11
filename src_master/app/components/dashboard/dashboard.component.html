@@ -1,0 +1,58 @@
+<!-- Barre de navigation supérieure -->
+<div class="w-full bg-dark-800 text-white shadow-lg fixed top-0 flex p-2">
+  <a href="#" class="mx-auto">
+    <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="Logo positronX.io">
+  </a>
+</div>
+
+<!-- Barre de navigation latérale et contenu principal -->
+<div class="flex mt-12">
+
+  <!-- Barre de navigation latérale -->
+  <div class="w-1/5 min-h-screen bg-light-200">
+    <div class="p-2">
+      <ul class="flex flex-col">
+        <li class="nav-item mb-2">
+          <a class="nav-link flex items-center text-black" href="#">
+            <i class="fas fa-user"></i>
+            <span class="ml-2">Profil de l'utilisateur</span>
+          </a>
+        </li>
+        <!-- Appel de la méthode SignOut() de AuthService -->
+        <li class="nav-item mb-2">
+          <a class="nav-link flex items-center text-black" (click)="authService.SignOut()" href="#">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="ml-2">Se déconnecter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <div role="main" class="w-4/5 ml-2">
+    <div class="p-4">
+
+      <div class="border-b-2 mb-2">
+        <h1 class="h2 text-2xl">Profil de l'utilisateur</h1>
+      </div>
+      <!-- Afficher les données de l'utilisateur lorsqu'il est connecté -->
+      <div class="flex" *ngIf="authService.userData as user">
+        <div class="w-full">
+          <div class="flex">
+            <img class="mr-5 rounded-full h-24 w-24" [src]="user.photoURL ? user.photoURL : '/assets/dummy-user.png'"
+              [alt]="user.displayName">
+            <div>
+              <h1 class="text-xl font-bold">Bonjour: <strong>{{(user.displayName) ? user.displayName : 'Utilisateur'}}</strong></h1>
+              <p>ID de l'utilisateur: <strong>{{user.uid}}</strong></p>
+              <p>Email: <strong>{{user.email}}</strong></p>
+              <p>Email vérifié: <strong>{{user.emailVerified}}</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
