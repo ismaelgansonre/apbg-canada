@@ -19,6 +19,9 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { ForgotPasswordComponent } from '../../src_master/app/components/forgot-password/forgot-password.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from 'src_master/app/components/sign-up/sign-up.component';
 
 
 const config = {
@@ -38,6 +41,10 @@ const config = {
     EventComponent,
     PublicationComponent,
     MembresComponent,
+    ForgotPasswordComponent,
+    SignInComponent,
+    SignUpComponent,
+
 
     NavbarComponent,
   ],
