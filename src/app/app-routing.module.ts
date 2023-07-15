@@ -10,6 +10,7 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthGuard } from './shared/guard/auth.guard';
+import { MembresComponent } from './pages/membres/membres.component';
 
 const routes: Routes = [
   //write path for
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'sign-in', component: SignInComponent },
   {path: 'register-user',component: SignUpComponent,},
+  {path: 'membres',component: MembresComponent,},
   {path: 'dashboard',component: DashboardComponent,canActivate: [AuthGuard],},
   { path: '', component: AccueilComponent },
 ];

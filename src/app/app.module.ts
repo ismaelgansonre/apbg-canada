@@ -44,6 +44,7 @@ const config = {
     ForgotPasswordComponent,
     SignInComponent,
     SignUpComponent,
+    MembresComponent,
 
 
     NavbarComponent,
